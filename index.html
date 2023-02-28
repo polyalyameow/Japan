@@ -22,7 +22,14 @@
       <div class="main">
         <h2 class="main__title">Patagonia</h2>
         <p class="main__text">Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcor.</p>
-        <img class="main__pic" src="./images/horses-bg.jpg" alt="Horses">
-      </div>  
+        <div class="main__pic">
+          <picture>
+            <source media="(min-width: 821px)" srcset="./images/horses-bg.jpg">
+            <source media="(min-width: 768px)" srcset="./images/horses-medium.jpg">
+            <source media="(max-width: 568px)" srcset="./images/horses-small.png">
+            <img src="./images/horses-bg.jpg" alt="Horses">
+        </picture>
+        </div>
+      </div>
 </body>
 </html>

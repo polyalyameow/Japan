@@ -1,6 +1,7 @@
 
+
 body{
-    min-height: 100vh;
+    height: 100vh;
     width: 100%;
     background-color: white;
     display: flex;
@@ -17,10 +18,11 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 45%;
+    max-width: 864px;
+    width: 100%;
     /* border: 2px solid yellow; */
     margin-top: 4.3125em;
-    margin-bottom: 3.125em; /*50px*/
+    margin-bottom: 2.9375em; /*50px*/
 }
 
 
@@ -43,7 +45,7 @@ body{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    padding-right: 3%;
+    /* padding-right: 3%; */
 
 }
 
@@ -100,9 +102,73 @@ body{
     padding-bottom: 47px;
 }
 
-/*IMAGE*/
-.main__pic{
-    max-width: 54em;
-    max-height: 30.375em; 
-    
+
+@media screen and (max-width: 821px){
+    .navigation{
+        width: 80%;
+        /* margin-top: 2.125em; */
+        /* padding-bottom: 50px; */
+        
+    }
+
+    .main__text{
+        width: 70%;
+    }
+
+    .main{
+        margin-top: 1.5625em; /*50px*/
+    padding-top: 1.25em;
+    }
+
+    .main__title{
+        /* padding-top: 50px; */
+        /* margin-top: 50px; */
+        font-size: 72px;
+        line-height: 83px;
+        letter-spacing: -1.6px;
+        padding: 0;
+        margin: 0;
+    }
+
+
+}
+
+@media screen and (max-width: 568px) {
+    .body{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navigation__text{
+        display: none;
+    }
+    .navigation::after{
+        content: "...";
+        font-size: 24px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .navigation{
+        margin-top: 0;
+        width: 80%;
+    }
+
+    .main__title{
+        font-size: 36px;
+        line-height: 40px;
+        letter-spacing: -0.8px;
+       
+
+    }
+
+    .main__text{
+        width: 70%;
+        font-size: 12px;
+        line-height: 18px;
+        width: 50%;
+    }
 }
