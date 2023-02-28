@@ -1,5 +1,4 @@
 
-
 body{
     height: 100vh;
     width: 100%;
@@ -45,8 +44,6 @@ body{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    /* padding-right: 3%; */
-
 }
 
 .navigation__text-link{
@@ -102,12 +99,11 @@ body{
     padding-bottom: 47px;
 }
 
+/*TABLET*/
 
 @media screen and (max-width: 821px){
     .navigation{
         width: 80%;
-        /* margin-top: 2.125em; */
-        /* padding-bottom: 50px; */
         
     }
 
@@ -121,8 +117,7 @@ body{
     }
 
     .main__title{
-        /* padding-top: 50px; */
-        /* margin-top: 50px; */
+
         font-size: 72px;
         line-height: 83px;
         letter-spacing: -1.6px;
@@ -132,6 +127,8 @@ body{
 
 
 }
+
+/*MOBILE*/
 
 @media screen and (max-width: 568px) {
     .body{
